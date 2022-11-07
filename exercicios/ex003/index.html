@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Checkbox e Radio</title>
+</head>
+
+<body>
+    <h1>Pizzaria Kels &#x1F355;</h1>
+    <hr>
+    <form onsubmit="alert('Formulário enviado')" method="post">
+        <h2>Você selecionou: Pizza de Calabresa</h2>
+        <h3>Quais opções você deseja?</h2>
+            <!--aqui é necessário colocar o name igual para todos e array e dizer para o servidor que é uma lista, caso contrário só retornaria a última escolha-->
+            <input type="checkbox" name="opcional[]" value="queijo" /> + queijo<br>
+            <input type="checkbox" name="opcional[]" value="calabresa" /> + calabresa<br>
+            <input type="checkbox" name="opcional[]" value="cebola" /> + cebola<br>
+            <input type="checkbox" name="opcional[]" value="azeitona" /> + azeitona<br>
+
+            <h2>Borda recheada?</h2>
+            <!--nesse caso, o name tem é igual pois só retornará uma das opções -->
+            <input type="radio" name="borda" value="sim" />Sim <br>
+            <input type="radio" name="borda" value="nao" />Não
+
+            <h2>Bebida</h2>
+            <input type="radio" name="bebida" value="suco" />Suco <br>
+            <input type="radio" name="bebida" value="refrigerante" />Refrigerante<br>
+            <input type="radio" name="bebida" value="água" />Água<br>
+            <input type="radio" name="bebida" value="Nenhum" />Nenhum <br><br>
+
+            <button type="submit">Enviar Pedido</button>
+
+    </form>
+</body>
+
+</html>

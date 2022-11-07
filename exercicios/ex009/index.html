@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Estilizando tabelas</title>
+</head>
+
+<body>
+    <table cellspacing="" cellpadding="5px"> <!--para "mesclar a linha" coloca valor 0 no cellspacing-->
+        <thead>
+            <tr>
+                <th>Nome completo</th>
+                <th>Curso</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr id="1">
+                <td>Kelly Sousa</td>
+                <td>Turismo</td>
+                <td>31</td>
+            </tr>
+            <tr id="2">
+                <td>Leonardo Macedo</td>
+                <td>Direito</td>
+                <td>42</td>
+            </tr>
+            <tr id="3">
+                <td>Rhayssa Sales</td>
+                <td>Secretariado</td>
+                <td>30</td>
+            </tr>
+            <tr id="4">
+                <td>Lucas Cilento</td>
+                <td>Engenharia da computação</td>
+                <td>27</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td colspan="2"></td> <!--serve para fazer a celula ocupar demais celulas, e tem o rowspan de cima para baixo-->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

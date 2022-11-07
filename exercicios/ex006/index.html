@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha HTML - DIO</title>
+    <style>
+        span {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>tags div e span</h1>
+    <h2>Tag &lt;div&gt;</h2>
+    <div id="menu-lateral">
+        <div id="links">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <!--O comportamento da div é oculpar toda atela pois é uma tag dispaly block, por isso o ponto quando dentro da tag se separa do restante do texto-->
+        Dio<div>.</div>me
+    </div>
+
+    <h2>Tag &lt;span&gt;</h2>
+    <div>
+        <!--como a tag span n é display block, ela n ocupa a tela inteira, por isso os itens continuam juntos. o span possibilita a estilização sem quebra de linha. E caso queira mudar poucas letras de um texto dentro da tag p-->
+        Dio<span>.</span>me
+    </div>
+</body>
+
+</html>

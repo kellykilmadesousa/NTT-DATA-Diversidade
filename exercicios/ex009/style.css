@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+table thead th {
+    background-color: black;
+    color: white;
+
+}
+
+table tfoot td {
+    background-color: lightgray
+}
+
+table tbody tr:nth-child(even) td {
+    background-color: lightcyan;
+}
+
+table tbody tr:hover td {
+    background-color: rgb(87, 188, 15);
+    cursor: pointer;
+}
+
+table {
+    padding: 10px;
+    padding-top: 30px;
+    margin: auto;
+    border: dashed 1px;
+    box-shadow: 13px 28px 45px 17px rgba(144, 92, 92, 0.8);
+    -webkit-box-shadow: 13px 28px 45px 17px rgba(172, 8, 8, 0.8);
+    -moz-box-shadow: 13px 28px 45px 17px rgba(84, 71, 71, 0.8);
+}
