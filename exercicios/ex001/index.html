@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+
+<body>
+    <form name="signup" target="_self" action="#" method="post" autocomplete="on" onsubmit="alert('Formulário enviado')">  <!--o atributo action se deve colocar o endereço do servidor (Define o caminho de onde as informações do formulário serão enviadas.); method pode ser get ou post (POST NÃO MOSTRA AS INFORMAÇÕES DIGITADAS POIS LEVA PARA O OUTRO LADO DO SERVIDOR); autocomplete  pode ser on ou off...serve para salvar as infs digitadas e qdo recarregar ele está salvo; on (é um eventos) onsubmit pode trazer um alert (que já é javascript)-->
+        Nome: <input type="text" name="name"><br><br>           
+        Idade: <input type="number" name="age"><br><br>
+        Senha: <input type="password" name="password"><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

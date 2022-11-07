@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalhando com tabelas</title>
+</head>
+
+<!--<table>: utilizada para exibir dados em séries de linhas e colunas
+<tr>: table row utilizada para definir uma linha de células na tabela,
+<td>: utilizada para definir uma célula na tabela contendo algum dado.
+<th>: utilizada para definir uma célula de cabeçalho na tabela.-->
+<!--Sumary é utilizado para para especificar o sumário do conteúdo da tabela, como detalhes sobre o autor.-->
+
+<body> <!--essas tags de agrupamento thead, etc serve para organizar inclusive se estiver bagunçado na página de index pois o navegador vai saber a ordem de cada parte-->
+    <table summary="resumo da descrição da tabela"> <!--border agora se configura pelo css-->
+        <caption>Tabela de idades dos alunos da Dio.me</caption> <!--legenda que aparecerá para o usuário-->
+        <tr>
+            <thead> <!--para mostrar que é o cabeçalho da tabela-->
+                <th title="nome completo">Nome</th>
+                <th>Idade</th>
+            </thead>
+        </tr>
+        <tbody> <!--para mostrar que é o corpo da tabela-->
+            <tr id="1">
+                <td>Kelly</td>
+                <td>31</td>
+            </tr>
+            <tr id="2">
+                <td>Lucas</td>
+                <td>27</td>
+            </tr>
+            <tr id="3">
+                <td>Rhay</td>
+                <td>31</td>
+            </tr>
+            <tr id="4">
+                <td>Amanda</td>
+                <td>20</td>
+            </tr>
+            <tr id="5">
+                <td>Larissa</td>
+                <td>27</td>
+            </tr>
+        </tbody>
+        <tfoot> <!--rodapé da tabela-->
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</html>

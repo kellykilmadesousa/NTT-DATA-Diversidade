@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+table, th, td {
+    border: 1px solid rgb(240, 45, 45);
+    /*border-collapse: collapse; /*tira as bordas duplas*/
+    width: 300px;
+    height: 5px;
+    margin: auto; /*ajuda a centralizar a tabela na tela*/
+    
+  }
+
+  th, td {
+    padding: 10%;
+    text-align: left;
+
+  }
+
+  table{
+    border-spacing: 10px;
+  }
+
+  table tr:nth-child(even){
+    background-color: burlywood;
+  }
+
+  table tr:hover td{
+    background-color: blue;
+  }

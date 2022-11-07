@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Trabalhando com fieldset</title>
+    <style>
+        .row {
+            margin: 5px;
+        }
+
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        fieldset {
+            width: 50%;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color: rgb(179, 174, 174);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <hr>
+    <div>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="row">
+                <label>Nome:</label><input type="text">
+                <label>E-mail:</label><input type="email">
+            </div>
+            <div class="row">
+                <label>Profissão:</label><input type="text">
+                <label>Empresa:</label><input type="text">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <div class="row">
+                <label>Endereço:</label><input type="text">
+                <label>Número:</label><input style="width: 60px" type="number" min="0">
+            </div>
+            <div class="row">
+                <label>Bairro:</label><input type="text">
+                <label>Cidade/UF:</label><input type="text">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações de contato</legend>
+            <div class="row">
+                <label>Celular:</label><input type="tel" placeholder="(xx) xxxxx-xxxx">
+                <label>Whatsapp:</label><input type="tel" placeholder="(xx) xxxxx-xxxx">
+            </div>
+            <div class="row">
+                <label>Linkedin:</label></label><input type="text">
+                <label>Github:</label></label><input type="text">
+            </div>
+        </fieldset>
+
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar Formulário</button>
+    </div>
+</body>
+
+</html>
