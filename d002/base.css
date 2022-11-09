@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 html, body {
     margin: 0;
 }
@@ -11,7 +13,7 @@ body {
     width: 1200px;
     display: flex;
     margin: 0 auto;
-    background-color: rgb(241, 221, 171);
+    background-color: #ffffff;
 }
 .main {
     display: flex;
@@ -20,31 +22,169 @@ body {
 }
 .menu {
     width: 15%;
-    background-color: rgb(241, 221, 171)ff;
+    background-color: #EAEAEA ;
     padding: 10px 20px 0px;
+    font-size: large;
+    font-weight: 500;
+    font-style: oblique;
+    font-family: 'Trebuchet MS', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: rgb(7, 7, 7);
 }
+
 .header {
-    background-color:  rgb(241, 221, 171);
+    background-color:  #ffffff;
     min-height: 150px;
 }
 .content {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     min-height: 300px;
-    padding: 100px;
+    padding: 70px;
     padding-right: 15px;
     
 }
 .footer {
-    background-color: #008037;
-    min-height: 150px;
+    background-color: #49B477;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    min-height: 80px;
     font-size: 1.5em;
-    text-align: center;
     padding-top: 80px;
-    
+    text-align: center;
 }
 
 a{
     text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(105, 108, 106);
+}
+
+.content-paragraphy{
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 1.3em;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: justify;
+    padding: 15px;
+    text-indent: 30px;
+}
+
+.content-cat{
+    padding: 15px;
+    border-radius: 30px;
+    opacity: 90%;
+}
+
+.content-dog{
+    padding: 15px;
+    border-radius: 30px;
+}
+
+mark{
+    background-color: rgb(121, 245, 183);
+}
+
+table, th, td {
+    border: 1.5px solid rgb(119, 109, 109);
+    /*border-collapse: collapse; /*tira as bordas duplas*/
+    width: 700px;
+    height: 20px;
+    margin: auto; /*ajuda a centralizar a tabela na tela*/
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 15px;
+  }
+
+  thead {
+    background-color: #ced5d1;
+    
+  }
+
+  table tr:nth-child(even){
+    background-color: rgb(255, 255, 255);
+  }
+
+  table tr:hover td{
+    background-color: rgb(147, 147, 159);
+  }
+
+  .aviso-horario{
+    color: red;
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .content-title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: justify;
+    padding: 15px;
+    text-indent: 30px;
+    text-decoration: underline;
 }
 
 
+.row {
+    margin: 5px;
+}
+
+.row-name{
+    width: ;
+}
+label {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+/*input{
+    width: 100px;
+}*/
+
+fieldset {
+    width: 80%;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-color: rgb(148, 143, 143);
+    color:black;
+    font-size: large;
+    font-weight: 400;
+    
+}
+
+legend{
+    font-size: larger;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.button-form{
+    margin: 10px;
+    margin-bottom: 60px;
+    padding: 10px;
+    
+}
+
+.button-clear{
+    background-color: rgb(187, 149, 36);
+    margin-right: 20px;
+}
+
+.button-send{
+    background-color: rgb(41, 187, 36);
+}
