@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Background origin</title>
+    <style>
+        div{
+            margin-bottom: 30px;
+        }
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-image: url(img/content-cat-400.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border: 15px dashed palegreen;
+            padding:  30px;
+        }
+
+        #padding-box{
+            background-origin: padding-box;
+        }
+
+        #border-box{
+            background-origin: border-box;
+        }
+
+        #content-box{
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="padding-box"></div>
+    <div id="border-box"></div>
+    <div id="content-box"></div>
+</body>
+</html>
