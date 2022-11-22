@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Repetições de imagem</title>
+    <style>
+        body {
+            background-color: rgb(251, 251, 251);
+        }
+
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(64, 75, 75);
+            background-image: url(img/content-cat-400.jpg);
+            margin-bottom: 30px;
+            border: 2px solid red;
+            background-size: 120px;
+
+        }
+
+        #element-01 {
+            background-repeat: repeat;  
+        }
+
+        #element-02 {
+            background-repeat: repeat-x;  
+        }
+
+        #element-03 {
+            background-repeat: repeat-y;  
+        }
+
+        #element-04 {
+            background-repeat: space;  
+        }
+
+        #element-05 {
+            background-repeat: round;  
+        }
+
+        #element-06 {
+            background-repeat: no-repeat;  
+        }
+
+        #element-07 {
+            background-repeat: no-repeat round;  
+        } /*mesclando valores eixos x e y*/
+
+        #element-08{
+            background-repeat: no-repeat; 
+            background-position: right 10px top 20px; /*os pixels pra trabalhar os cantos*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="element-01"></div>
+    <div id="element-02"></div>
+    <div id="element-03"></div>
+    <div id="element-04"></div>
+    <div id="element-05"></div>
+    <div id="element-06"></div>
+    <div id="element-07"></div>
+    <div id="element-08"></div>
+
+</body>
+
+</html>
