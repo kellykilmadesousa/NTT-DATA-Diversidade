@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Bordas com imagem</title>
+    <style>
+    body{
+        background-color: bisque;
+    }
+
+    .exemplo{
+        background-color: rgb(250, 245, 245);
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+        border: 30px solid;
+        margin: 50px auto;
+    }
+
+    #square1{
+        border-image-source: url(img/planet-plane.png);
+        
+    }
+
+    #square2{
+        border-image-source: linear-gradient(red, blue, green);
+    }
+
+    #square3{
+        border-image-source: url(img/stars.png);
+        border-image-slice: 166 fill; /*fill é a parte 9 da imagem*/
+        border-image-repeat: repeat;
+    }
+
+    #square4{
+        border-image-source: linear-gradient(red, rgb(168, 13, 39));
+        border-image-slice: 10; /*aqui vai nivelar o gradiente na borda*/
+        /*border-image-repeat: repeat; vai fazer com que as bordas tenham divisórias de cores*/
+
+    }
+
+    #square5{
+        border-image-source: url(img/stars.png);
+        border-image-slice: 166 fill; /*fill é a parte 9 da imagem*/
+        border-image-repeat: repeat;
+        border-image-width: 8px;
+    }
+
+    #square6{
+        border-image-source: url(img/stars.png);
+        border-image-slice: 166 fill; /*fill é a parte 9 da imagem*/
+        border-image-repeat: repeat;
+    }
+
+    #square7{
+        border-image-source: url(img/stars.png);
+        border-image-slice: 166 fill; /*fill é a parte 9 da imagem*/
+        border-image-repeat: stretch;
+
+    }
+
+    #square8{
+        border-image-source: url(img/stars.png);
+        border-image-slice: 166 fill; /*fill é a parte 9 da imagem*/
+        border-image-repeat: round;
+
+    }
+
+    #square9{
+        border-image-source: url(img/stars.png);
+        border-image-slice: 166 fill; /*fill é a parte 9 da imagem*/
+        border-image-repeat: space;
+
+    }
+
+    #square10{
+        border-image-source: url(img/stars.png);
+        border-image-repeat: round;
+        border-image-slice: 166;
+        border-image-outset: 3.4px;
+    }
+
+    #square11{
+        border-image: url(img/stars.png) 166 / 10px / 1 round; 
+
+
+    }
+    </style>
+</head>
+<body>
+    <h1>Bordas com imagens</h1>
+    <ul>
+        <li>border-image-source</li>
+        <li>border-image-slice</li>
+        <li>border-image-width</li>
+        <li>border-image-repeat</li>
+        <li>border-image-outset</li>
+    </ul>
+
+    <h2>Exemplos</h2>
+    <h1>Com border source image:</h1>
+    <p>border imagem source </p>
+    <div id="square1" class="exemplo"></div>
+    <p>border source gradiente</p>
+    <div id="square2" class="exemplo"></div>
+    <h1>Com border image slice:</h1>
+    <p>Conseguimos dividir a imagem em partes para trabalhar as bordas</p>
+    <p>border image slice: </p>
+    <div id="square3" class="exemplo"></div>
+    <p>boder image slice com degradê</p>
+    <div id="square4" class="exemplo"></div>
+    <h1>border image width: </h1>
+    <p>podemos colocar valores diferentes para das bordas, será aplicado no sentido horário começando pelo topo. Podemos usar % e pixels, e aceita a keyword auto</p>
+    <div id="square5" class="exemplo"></div>
+    <h1>border image repeat:</h1>
+    <p>Repeat:</p>
+    <div id="square6" class="exemplo"></div>
+    <p>stretch: não estica os cantos e a parte fill </p>
+    <div id="square7" class="exemplo"></div>
+    <p>Round:</p>
+    <div id="square8" class="exemplo"></div>
+    <p>Space: adiciona espaços entre as partes da imagem</p>
+    <div id="square9" class="exemplo"></div>
+    <h1>border image outset: </h1>
+    <p>a borda se afasta do elemento e não aceita números negativos</p>
+    <div id="square10" class="exemplo"></div>
+
+    <h1>Podemos definir todas as bordas em uma mesma propriedade imagens, na ordem:</h1>
+    <ul>
+        <li>border-image-source</li>
+        <li>border-image-slice</li>
+        <li>border-image-width</li>
+        <li>border-image-outset</li>
+        <li>border-image-repeat</li>
+        
+        
+    </ul>
+    <h2>Exemplo:</h2>
+    <div id="square11" class="exemplo"></div>
+
+</body>
+</html>
