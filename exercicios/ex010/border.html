@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Bordas</title>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+
+        #square {
+            width: 150px;
+            height: 150px;
+            background-color: blueviolet;
+            border-style: ridge;
+            border-width: 10px;
+            /*além de pixels podemos configurar com thin, medium e thick*/
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        #square2 {
+            width: 150px;
+            height: 150px;
+            background-color: blueviolet;
+            border-style: solid;
+            margin-bottom: 20px;
+            border-width: 10px 20px 30px 40px;
+            /*além de pixels podemos configurar com thin, medium e thick*/
+        }
+
+
+        #square3 {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(189, 167, 210);
+            border: 10px solid coral;
+            border-bottom: 20px dashed purple;
+            margin-bottom: 20px;
+        }
+
+        #square4 {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(164, 78, 245);
+            border-radius: 20px;
+            /*podemos definir os cantos individualmente e se colocarmos uma barra / podemos ter um efeito mais oval*/
+            margin-bottom: 20px;
+        }
+
+        #square5 {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /*só conseguimos o efeito de circulo quando temos um quadrado perfeito, caso contrário fica oval*/
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bordas</h1>
+    <p>Podemos definir as configurações das nossas bordas através das propriedades:</p>
+    <ul>
+        <li>border-width</li>
+        <!--espessuara da borda-->
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplo:</h2>
+    <div id="square"></div>
+    <div id="square2"></div>
+    <div id="square3"></div>
+    <div id="square4"></div>
+    <div id="square5"></div>
+</body>
+
+</html>
