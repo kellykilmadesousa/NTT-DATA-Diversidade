@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>text-overflow</title>
+    <style>
+        .exemplo{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;
+        }
+
+        #horizontal-tb{
+            writing-mode: horizontal-tb;
+        }
+
+        #vertical-rl{
+            writing-mode: vertical-rl;
+        }
+
+        #vertical-lr{
+            writing-mode: vertical-lr;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Propriedade writing-mode</h1>
+    <p>Define a orientação do texto (vertical ou horizontal)</p>
+    <p><em>Exemplo:</em></p>
+        
+    <code>writing-mode: horizontal-tb;</code>
+    <p id="horizontal-tb" class="exemplo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+
+    <code>writing-mode: vertical-rl;</code>
+    <p id="vertical-rl" class="exemplo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+
+    <code>writing-mode: vertical-lr;</code>
+    <p id="vertical-lr" class="exemplo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+</body>
+</html>

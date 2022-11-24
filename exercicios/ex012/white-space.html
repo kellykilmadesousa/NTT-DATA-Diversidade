@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>White-space</title>
+    <style>
+        .exemplo {
+            width: 150px;
+            background-color: rgb(107, 231, 231);
+        }
+
+        span {
+            background-color: seagreen;
+            color: white;
+        }
+
+        #nowrap {
+            white-space: nowrap;
+
+        }
+
+        #pre {
+            white-space: pre;
+        }
+
+        #pre-line {
+            white-space: pre-line;
+        }
+
+        #pre-wrap {
+            white-space: pre-wrap;
+        }
+
+        #break-spaces {
+            white-space: break-space;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propriedade White-space</h1>
+    <p>Define como os espaços em branco do texto de um determinado elemento é tratado.</p>
+
+    <p><em>Exemplos:</em></p>
+    <code>white-space: normal;</code>
+    <p id="normal" class="exemplo"><span>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima qui rerum deleniti
+            provident iusto! Asperiores nobis quod illum? Quia possimus fuga alias a expedita temporibus? Corporis illum
+            voluptas aspernatur quod.
+        </span></p>
+
+    <code>white-space: nowrap;</code>
+    <p id="nowrap" class="exemplo"><span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iure dolorum
+            aliquam
+            voluptatem, ad fugit est amet obcaecati quod alias impedit perspiciatis quibusdam dignissimos cumque ut
+            error
+            eius ipsa nostrum!
+        </span></p>
+
+    <code>white-space: pre;</code>
+    <p id="pre" class="exemplo"><span>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio animi a aliquam explicabo modi ad,
+            dolore molestiae! Voluptatum blanditiis nisi numquam iste eligendi, ad dolorem qui neque incidunt quae
+            quasi?
+        </span>
+    </p>
+
+    <code>white-space: pre-line;</code>
+
+    <p id="pre-line" class="exemplo"><span>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil ex voluptate
+            odio doloribus est
+            quidem ipsa, similique voluptas amet ducimus culpa ratione rem repudiandae sint aliquid cum, vero pariatur
+            dicta?
+        </span></p>
+
+
+    <code>white-space: pre-wrap;</code>
+    <p id="pre-wrap" class="exemplo"><span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsa voluptatum voluptatem.
+            Cumque, sit magni. Nostrum voluptatum quam id est cupiditate at tenetur, laborum, ratione quasi, nihil
+            temporibus labore molestias?
+        </span></p>
+
+    <code>white-space: break-spaces;</code>
+    <p id="break-spaces" class="exemplo"><span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsa voluptatum voluptatem.
+            Cumque, sit magni. Nostrum voluptatum quam id est cupiditate at tenetur, laborum, ratione quasi, nihil
+            temporibus labore molestias?
+        </span></p>
+
+</body>
+
+</html>

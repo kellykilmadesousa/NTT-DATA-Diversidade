@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>text-overflow</title>
+    <style>
+        .exemplo{
+            width: 200px;
+            background-color: rgb(154, 18, 233);
+            margin: 10px;
+        }
+
+        p{
+            white-space: nowrap; 
+            overflow: hidden; /*vai esconder o texto que passa quadrado*/
+        }
+
+        #clip{
+            text-overflow: clip;
+        }
+
+        #ellipsis{
+            text-overflow: ellipsis;
+        }
+
+        #string{
+            text-overflow: ' ver mais???';  /*colocamos a string desejada entre aspas simples. só funciona no firefox*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Propriedade text-overflow</h1>
+    <p>Define a orientação do texto (vertical ou horizontal)</p>
+    <p><em>Exemplo:</em></p>
+        
+    <code>text-overflow: clip;</code>
+    <p id="clip" class="exemplo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. lore </p>
+
+    <code>text-overflow: ellipsis;</code>
+    <p id="ellipsis" class="exemplo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+
+    <code>text-overflow: string;</code>
+    <p id="string" class="exemplo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+</body>
+</html>
