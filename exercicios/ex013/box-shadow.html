@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Box-shadow</title>
+    <style>
+        body {
+            background-color: rgb(233, 205, 209);
+        }
+
+        .exemplo {
+            width: 150px;
+            height: 150px;
+            border: 50px solid #af382e;
+            margin: 20px auto;
+            background-color: rgb(20, 20, 20);
+            
+
+            box-shadow: inset 20px 40px 40px -7px purple, 20px 40px 40px -7px rgb(175, 240, 11);
+            /*o terceiro valor é o desfalque da sombra, o quarto número é a propagação da sombra*/
+            /*inset faz a sombra ficar interna*/
+        }
+
+        img {
+            width: 500px;
+            height: 200px;
+            margin: 20px auto;
+            object-fit: cover;
+            box-shadow: 10px 10px 5px gray; /*o box shadow coloca a sombra em volta da imagem, se quisermos colocar colocar em volta das letras usamos a propriedade filter e a função drop-shadow*/
+            
+
+        }
+
+        #img2 {
+            width: 500px;
+            height: 200px;
+            margin: 20px auto;
+            object-fit: cover;
+            filter: drop-shadow(10px 10px 5px #de1919); 
+        }
+
+        #img3 {
+            width: 500px;
+            height: 200px;
+            margin: 20px auto;
+            object-fit: cover;
+            box-shadow: none;
+            filter: drop-shadow(10px 10px 5px gray); 
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propriedades Box-shadow e filter</h1>
+
+    <h2>Box-shadow</h2>
+    <div class="exemplo"></div>
+    <div><img src="img/transferir.jpg" alt="logo DIO"></div>
+
+    <div><img id="img2" src="img/95ce2b2e-ccc0-40d8-ae56-65178fc030b9.png" alt="logo DIO"></div>
+
+    <img id="img3" src="img/logo.png" alt="logo DIO">
+
+
+</body>
+
+</html>

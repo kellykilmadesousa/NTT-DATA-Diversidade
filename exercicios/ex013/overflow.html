@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>overflow</title>
+    <style>
+        body {
+            background-color: rgb(233, 205, 209);
+        }
+
+        .exemplo {
+            background-color: rgb(244, 244, 78);
+            border: 3px solid purple;
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+        }
+
+        #hidden {
+            overflow: hidden;
+        }
+
+        #scroll {
+            overflow: scroll;
+        }
+
+        #auto {
+            overflow: auto;
+        }
+
+        #exemplo1 {
+            white-space: nowrap;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propriedade<code>overflow</code></h1>
+    <h2>overflow do CSS</h2>
+    <p>Controla como o conteúdo deve ser exibido caso ultrapasse os limites do container. É necessário informar altura
+        caso contrário o elemento irá se ajustar automaticamente e o overflow não funcionará</p>
+    <p><em>Exemplos:</em></p>
+
+    <code>overflow: visible;</code>
+    <div class="exemplo">
+        <p><strong>O conteúdo será mostrado mesmo que passe da margens estabelecidas para o elemento.</strong></p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    </div>
+    <br><br><br>
+    <code>overflow: hidden;</code>
+    <div id="hidden" class="exemplo">
+        <p><strong>O conteúdo que ultrapasssa o elemento será cortado</strong></p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos maiores aspernatur repudiandae
+            necessitatibus sequi exercitationem ducimus nostrum, est amet delectus perspiciatis dicta.Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Dignissimos maiores aspernatur repudiandae necessitatibus sequi
+            exercitationem ducimus nostrum, est amet delectus perspiciatis dicta.</p>
+    </div>
+    <br><br><br>
+    <code>overflow: scroll;</code>
+    <div id="scroll" class="exemplo">
+        <p><strong>O conteúdo que ultrapasssa o elemento será cortado mas será adicionado uma barra de rolagem para
+                visualização do restante do conteúdo</strong></p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos maiores aspernatur repudiandae
+            necessitatibus sequi exercitationem ducimus nostrum, est amet delectus perspiciatis dicta.Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Dignissimos maiores aspernatur repudiandae necessitatibus sequi
+            exercitationem ducimus nostrum, est amet delectus perspiciatis dicta.</p>
+    </div>
+    <br><br><br>
+    <code>overflow: auto;</code>
+    <div id="auto" class="exemplo">
+        <p><strong>Será adicionado uma barra de rolagem para visualização do <em>APENAS</em> se ultrapassar o conteúdo
+                passar o elemento</strong></p>
+    </div>
+    <br><br><br>
+
+    <code>overflow-x e overflow-y;</code>
+    <div id="exemplo1" class="exemplo">
+        <p><strong>Também podemos adicionar overflow para os eixos x e y e utilizar os valores citados anteriormente.</strong></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque distinctio quidem dolores aperiam
+            perspiciatis! Ratione aspernatur doloremque delectus, cupiditate...</p>
+    </div>
+
+</body>
+
+</html>

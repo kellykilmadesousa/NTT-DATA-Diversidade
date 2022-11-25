@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Opacity</title>
+    <style>
+        body {
+            background-color: rgb(233, 205, 209);
+        }
+
+        h2 {
+            color: brown;
+            font-size: 40px;
+            text-align: center;
+            text-shadow: -20px 20px 5px purple;
+        }
+
+        .exemplo {
+            background-color: purple;
+            border: 5px solid orange;
+            color: white;
+            padding: 20px;
+            opacity: .9 ;
+        }
+
+        .exemplo img{
+            width: 150px;
+            opacity: .4;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propriedade <code>opacity</code></h1>
+    <h2>Opacity do CSS</h2>
+    <p>Define o nível de opacidade (transparência) de um elemento.
+        varia de 0 (transparência) a 1 (nenhum nível de transparência)
+        conteúdos, textos e caracteres também serão impactados.
+        No caso da imagem, se for aplicado só nela não afetará os outros elementos.
+
+        É interessante trabalhar com cores em alfa para que não interfira o nível de transparência em tudo, somente no plano de fundo, por exemplo.
+    </p>
+    <p><em>Exemplo:</em></p>
+    <div class="exemplo">
+        <h3>Trilha de CSS</h3>
+        <p>
+            conhecendo as propriedades CSS uma a uma!
+        </p>
+        <img src="img/logo-sm-white.png" alt="logo DIO">
+    </div>
+
+</body>
+</html>
