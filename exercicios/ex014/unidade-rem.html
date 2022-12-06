@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Medida REM</title>
+    <style>
+        p {
+            margin: 0;
+        }
+
+        div {
+            padding: 10px;
+        }
+
+        .exemplo-01 {
+            background-color: yellow;
+        }
+
+        .exemplo-02 {
+            background-color: palevioletred;
+        }
+
+        .exemplo-03 {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Unidade de medida em</h1>
+
+    <p style="font-size: 1em;">font-size: 1em = 16px;</p>
+    <p style="font-size: 2em;">font-size: 2rem = 32px;</p>
+    <p style="font-size: 3em;">font-size: 3rem = 48px;</p>
+    <hr><br>
+
+    <div class="exemplo-01" style="font-size: 20px;">font-size:20px
+        <div class="exemplo-02" style="font-size: 2rem">font-size: 2rem = 32px
+            <div class="exemplo-03" style="font-size: 3rem">font-size: 3rem = 32px</div>
+        </div>
+    </div>
+    <hr><br>
+
+    <div class="exemplo-01" style="font-size: 20px;">font-size:20px
+        <div class="exemplo-02" style="font-size: 2rem">font-size: 2rem = 32px
+            <div class="exemplo-03" style="font-size: 2rem">font-size: 2rem = 32px</div>
+        </div>
+    </div>
+    <hr><br>
+
+    <div class="exemplo-02" style="font-size: 30px; width: 10em;">
+        font-size: 30px; <br>
+        width: 10rem = 160px
+    </div>
+
+
+
+</body>
+
+</html>
